@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(lightblue,darkblue);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-fluid,.container{
+    height:100%;
+}
+.h-100{
+    border:1px solid rgb(lightblue,darkblue);
+}
+#jumbotron-top{
+    background: linear-gradient(darkblue,lightblue);
+    background-repeat: no-repeat;
+}
+#jumbotron-bottom{
+    background: linear-gradient(lightblue,darkblue);
+    background-repeat: no-repeat;
+}
+#jumbotron-center{
+    background-color: lightblue;
+    background-repeat: no-repeat;
+}
+.btn{
+    color: #FFF;
+    font-weight: bold;
+    background-color: darkblue;
+    border: none;
+    transition: 1.2s;
+    cursor: pointer;
+}
+.btn:hover{
+    color: lightgoldenrodyellow;
+}
+#guest-book-links .badge{
+    color:#FFF;
+    border:1px solid #FFF;
+    border-radius: 4px 4px 0px 0px;
+    margin: 1px;
+}
+#guest-book-links .badge:hover{
+    color: rgb(45, 88, 128);
+}
+.card{
+    border: 1px solid lightblue;
+}
+.input-group-text{
+    color:#FFF;
+    background-color: darkblue;
+}
+.btn .disabled:hover{
+    cursor: not-allowed;
+}
+/* home page header style */
+#home h3{
+    text-shadow: 0 0 3px darkblue,0 0 5px #0000FF;
+}
+.nav .nav-tabs:nth-child(odd){
+    border-right:none;
+}
+/* display book for card id where we show our a specific book item */
+#display-book{
+    color: #FFF;
+    background-color: rgba(143, 206, 228, 0.774);
+    background-repeat: no-repeat;
+}

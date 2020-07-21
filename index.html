@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Loan Calculator</title>
+		<!-- Latest compiled and minified CSS -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		/>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="scripts.js" defer></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="container p-5">
+				<div class="row p-2 h-100" >
+					<div class="col-md-6 mx-auto my-auto" id="row-col-id">
+						<div class="card card-header p-3 shadow mb-0" id="jumbotron-top">
+                            <h3 class="heading text-white font-weight-bold">Movies Book</h3>
+                            <ul class="nav nav-tabs border-0" id="guest-book-links">
+                                <li class="nav-item">
+                                    <a  class="badge btn-link" data-toggle="tab" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a  class="badge btn-link" data-toggle="tab" href=".adding-movies">Add Movie To Book</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a  class="badge btn-link show-movies" data-toggle="tab" href="#display-book" >View Book</a>
+                                </li>
+                            </ul>
+						</div>
+						<div class="card-body tab-content p-3 shadow mb-0" id="jumbotron-center">
+                            <div id="home" class="tab-pane active text-center p-4" >
+                                <h3 class="text-white p-5">Welcome To Movies Book Home Page</h3>
+                            </div>
+							<div id="form-book" class="tab-pane fade adding-movies">
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Movie Name</span>
+                                    </div>
+                                    <input type="text" id="input-name" class="form-control" placeholder="E.g Thor">
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Release Date</span>
+                                    </div>
+                                    <input type="date" id="date-picker" class="form-control" >
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Banner</span>
+                                    </div>
+                                    <input type="text" id="image-url" placeholder="Image Url" class="form-control" >
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Description</span>
+                                    </div>
+                                    <textarea  id="description" placeholder="Description" class="form-control" rows="4"></textarea>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <button class="btn btn-block add-book">ADD TO Book</button>
+                                </div>
+							</div>
+
+                            <div id="display-book" class="text-center display-Movie tab-pane fade m-2">
+                                <div id="loader" class="d-none">
+                                    <img src="loading.gif" alt="">
+                                </div>
+                            </div>
+						</div>
+						<div class="card-footer p-3 shadow mb-0 border-1 border-info" id="jumbotron-bottom">
+							<h3 class="heading text-white font-weight-bold text-center small">Movie Book</h3>
+						</div>
+					</div>
+                </div>
+                <p class="p-5 text-center text-white small">Developed By <a href="#">Waseemjaved</a> CopyRight &copy; 2020</p>
+			</div>
+        </div>
+	</body>
+</html>
